@@ -13,3 +13,4 @@ Pillow
 uvicorn
 fastapi
 python-multipart
+opencv-python-headless  # Instead of opencv-python
