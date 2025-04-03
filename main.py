@@ -26,3 +26,5 @@ async def predict_face(file: UploadFile = File(...)):  # ✅ Correct syntax
     result = recognize_faces(image)
     return {"message": "Image received successfully", "result": result}
 
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)
