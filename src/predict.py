@@ -57,7 +57,7 @@ def recognize_faces(image):
         min_distance = min(distances)
 
         # Define threshold
-        threshold = 0.81
+        threshold = 0.78
 
         if min_distance < threshold:
             recognized_names.append(final_name)
