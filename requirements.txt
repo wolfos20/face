@@ -11,3 +11,4 @@ pandas
 uvicorn
 fastapi
 python-multipart
+gunicorn
