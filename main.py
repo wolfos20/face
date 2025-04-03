@@ -1,6 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 import cv2
 import numpy as np
+import os
 import logging
 from src.predict import recognize_faces
 
@@ -27,4 +28,5 @@ async def predict_face(file: UploadFile = File(...)):  # ✅ Correct syntax
     return {"message": "Image received successfully", "result": result}
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
     app.run(host='0.0.0.0', port=8080)
